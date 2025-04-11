@@ -1,0 +1,89 @@
+:root {
+	--black: rgba(51, 51, 51, 1);
+	--accent: rgb(255, 153, 0);
+	--accent-light: rgb(255, 193, 101);
+	--accent-rgb: 255, 153, 0;
+	--orange-gradient: linear-gradient(145deg, rgba(255, 153, 0, 1) 0%, rgba(255, 193, 101, 1) 100%);
+	--black-gradient: linear-gradient(45deg, rgba(30, 30, 30, 1) 0%, rgba(51, 51, 51, 1) 100%);
+	--gray: rgb(141, 141, 141);
+	--light-gray: #cccccc;
+	--shadow-filter: drop-shadow(0 15px 10px rgba(0, 0, 0, .2));
+
+	--wp--preset--font-size--large: 3vw;
+}
+
+.components-button.components-notice__action.is-link {
+    color: rgb(255,193,101);
+    border: 1px solid rgb(255,193,101);
+    padding: 7px 15px;
+    text-decoration: none;
+    line-height: 1;
+  }
+
+.block-editor-iframe__body {
+    position: relative;
+    background: #ededed;
+    color: var(--black);
+  }
+
+  .wp-block-column {
+    border: 1px dotted rgba(31,31,31,0.5);
+  }
+
+blockquote{
+	line-height: 1;
+	position: relative;
+	margin: 0;
+	padding-left: 30px;
+	font-weight: 600;
+	padding: 15px 20px;
+}
+
+blockquote:before{
+	content: '';
+	width: 2px;
+	height: 100%;
+	display: block;
+	position: absolute;
+	background: var(--accent);
+	left: 0;
+	top: 0;
+}
+    .block-editor-block-list__layout .block-editor-block-list__block .block-library-spacer__resize-container {
+    position: relative;
+    background: rgba(225, 225, 225, 0.1);
+  }
+
+  .block-editor-block-list__layout .block-editor-block-list__block .block-library-spacer__resize-container::after {
+    content: 'spacer';
+    color: rgba(255,255,255,.4);
+    font-size: .7em;
+    font-weight: 700;
+    position: absolute;
+    top: 30%;
+    left: 10px;
+  }
+
+  .components-editor-notices__dismissible .components-notice, .components-editor-notices__pinned .components-notice {
+    border-bottom: 1px solid #0003;
+    box-sizing: border-box;
+    min-height: 60px;
+    padding: 0 12px;
+    background: rgba(0,0,0,.7);
+    position: absolute;
+    top: 0;
+    z-index: 500;
+    right: 20px;
+    top: 10px;
+    color: #fff;
+  }
+
+  .components-notice__dismiss {
+    align-self: flex-start;
+    color: rgb(255,193,101);
+    flex-shrink: 0;
+  }
+
+  .components-button.is-link{
+    color: var(--accent);
+  }
