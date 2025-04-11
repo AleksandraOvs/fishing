@@ -20,31 +20,42 @@
 
 
   @font-face {
-    font-family: "Proxima Nova";
+    font-family: "Cera";
     font-weight:300;
     src: local("Proxima Nova"), 
-    url(../fonts/proximanova_light.ttf) format("truetype"), 
-    url(../fonts/proximanova_light.woff) format("woff"), 
-    url(../fonts/proximanova_light.woff2) format("woff2");
+    url(../fonts/CeraProLight.ttf) format("truetype"), 
+    url(../fonts/CeraProLight.woff) format("woff"), 
+    url(../fonts/CeraProLight.woff2) format("woff2");
     font-display: swap;
   }
 
   @font-face {
-    font-family: "Proxima Nova";
+    font-family: "Cera";
     font-weight:400;
-    src: local("Proxima Nova"), 
-    url(../fonts/proximanova_regular.ttf) format("truetype"), 
-    url(../fonts/proximanova_regular.woff) format("woff"), 
-    url(../fonts/proximanova_regular.woff2) format("woff2");
+    src: local("Cera"), 
+    url(../fonts/CeraProRegular.ttf) format("truetype"), 
+    url(../fonts/CeraProRegular.woff) format("woff"), 
+    url(../fonts/CeraProRegular.woff2) format("woff2");
     font-display: swap;
   }
 
   @font-face {
-    font-family: "Proxima Nova";
+    font-family: "Cera";
+    font-weight:500;
+    src: local("Cera"), 
+    url(../fonts/CeraProMedium.ttf) format("truetype"), 
+    url(../fonts/CeraProMedium.woff) format("woff"), 
+    url(../fonts/CeraProMedium.woff2) format("woff2");
+    font-display: swap;
+  }
+
+
+  @font-face {
+    font-family: "Cera";
     font-weight:700;
-    src: local("Proxima Nova"), 
-    url(../fonts/proximanova_bold.ttf) format("truetype"), 
-    url(../fonts/proximanova_bold.woff) format("woff"), 
-    url(../fonts/proximanova_bold.woff2) format("woff2");
+    src: local("Cera"), 
+    url(../fonts/CeraProBold.ttf) format("truetype"), 
+    url(../fonts/CeraProBold.woff) format("woff"), 
+    url(../fonts/CeraProBold.woff2) format("woff2");
     font-display: swap;
   }

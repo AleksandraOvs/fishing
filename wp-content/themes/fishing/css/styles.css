@@ -108,7 +108,7 @@ section.section {
     position: absolute;
     top: -30px;
     width: max-content;
-    font-family: 'Proxima Nova', sans-serif;
+    font-family: 'Cera', sans-serif;
     text-transform: uppercase;
     left: 0;
     /* transform: translateX(50px); */
@@ -307,7 +307,7 @@ section.section {
 .hero-description {
     font-size: 20px;
     font-weight: 300;
-    font-family: 'Proxima Nova';
+    font-family: 'Cera';
 }
 
 .hero-background {
