@@ -2635,6 +2635,11 @@ ul.messengers-list._toggle-contacts.animate li:nth-child(4) {
         height: 765px;
     }
 
+    .photo-block__content.fronRight {
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+
 
     .section._additional-section .fixed-container {
         padding: 15px;
@@ -3173,6 +3178,10 @@ ul.messengers-list._toggle-contacts.animate li:nth-child(4) {
         height: auto;
         transform: none;
     }
+
+    .section._additional-section {
+        padding-top: 12vh;
+      }
 }
 
 /*GUT*/
