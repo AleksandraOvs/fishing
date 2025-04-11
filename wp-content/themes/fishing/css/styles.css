@@ -305,9 +305,10 @@ section.section {
 }
 
 .hero-description {
-    font-size: 20px;
-    font-weight: 300;
-    font-family: 'Cera';
+    font-size: 24px;
+  font-weight: 400;
+  font-family: 'Cera';
+  line-height: 120%;
 }
 
 .hero-background {
@@ -538,8 +539,8 @@ section.section {
 .welcome__inner__text,
 .video-block__right {
     position: relative;
-    font-size: 16px;
-    font-weight: 300;
+  font-size: 18px;
+  font-weight: 400;
 }
 
 .welcome__inner__text::after {
@@ -889,7 +890,7 @@ section.section {
 }
 
 .add-slider__slide__content-inner {
-    padding: 40px 30px;
+    padding: 40px 15px;
     height: calc(100% - 180px);
 }
 
@@ -915,6 +916,10 @@ section.section {
     flex-direction: column;
     color: #fff;
 }
+
+.add-section__content .btn {
+    margin-top: 20px;
+  }
 
 .add-section__content .btn {
     margin-bottom: 40px;
