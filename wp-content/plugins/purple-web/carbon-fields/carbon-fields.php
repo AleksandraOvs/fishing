@@ -225,6 +225,12 @@ function site_carbon()
             Field::make('rich_text', 'crb_video_text', 'Текстовый блок')
         ))
 
+        ->add_tab(__('Фото'), array(
+            Field::make('image', 'crb_image_background', 'Фото для перебивки')
+                ->set_width(50),
+            Field::make('rich_text', 'crb_image_text', 'Текстовый блок')
+        ))
+
         ->add_tab(__('Контент блока Доп. информация'), array(
             Field::make('text', 'crb_add_head', 'Заголовок блока')
                 ->set_width(33),
