@@ -3182,6 +3182,11 @@ ul.messengers-list._toggle-contacts.animate li:nth-child(4) {
     .section._additional-section {
         padding-top: 12vh;
       }
+
+      .photo-block__content{
+        font-size: 28px;
+      }
+     
 }
 
 /*GUT*/

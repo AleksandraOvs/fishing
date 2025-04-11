@@ -12,7 +12,7 @@
             <div class="photo-block fromOpacity">
                <?php  echo '<img src="'.$photo_bg_img.'" />'; ?>
 
-               <div class="photo-block__content fronRight">
+               <div class="photo-block__content fromRight">
                 <?php echo carbon_get_post_meta(get_the_ID(), 'crb_image_text')?>
                </div>
             </div>
