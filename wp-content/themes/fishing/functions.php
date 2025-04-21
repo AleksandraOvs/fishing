@@ -158,6 +158,9 @@ function fishing_scripts()
 	wp_enqueue_script('fishing-anime-scripts', get_stylesheet_directory_uri() . '/js/anime.min.js', array(), null, true);
 	wp_enqueue_script('fishing-animation-scripts', get_stylesheet_directory_uri() . '/js/animation.js', array(), _S_VERSION, true);
 	wp_enqueue_script('swiper-scripts', get_stylesheet_directory_uri() . '/inc/swiper/swiper-bundle.min.js', array(), null, true);
+	wp_enqueue_script('js-accordion-ui', 'https://code.jquery.com/ui/1.12.1/jquery-ui.js', array(), null, true);
+	wp_enqueue_script('accordion-scripts', get_stylesheet_directory_uri() . '/js/accordion.js', array(), null, true);
+	
 	wp_enqueue_script('imask-scripts', 'https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.10/jquery.mask.js', array(), null, true);
 
 	wp_enqueue_script('slider-js', get_stylesheet_directory_uri() . '/inc/swiper/slider-scripts.js', array(), null, true);
@@ -183,6 +186,9 @@ function gut_styles()
 	add_theme_support('editor-styles');
 	add_editor_style('css/admin-styles.css');
 }
+
+add_theme_support('post-thumbnails');
+add_image_size('gallery', 400, 270, true);
 
 /**
  * 

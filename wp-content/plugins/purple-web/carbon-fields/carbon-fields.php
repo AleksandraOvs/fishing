@@ -218,6 +218,49 @@ function site_carbon()
                 )),
         ))
 
+        ->add_tab(__('О бане'), array(
+
+            Field::make('text', 'crb_bath_head', 'Заголовок блока')
+                ->set_width(33),
+            Field::make('text', 'crb_bath_desc', 'Краткий подзаголовок')
+                ->set_width(33),
+            Field::make('rich_text', 'crb_bath_text', 'Текст')
+                ->set_width(33),
+            Field::make('complex', 'crb_bath_list', 'Преимущества')
+                ->add_fields(array(
+                    Field::make('image', 'crb_bath_img', 'Иконка')
+                        ->set_width(33),
+                    Field::make('rich_text', 'crb_bath_list_head', 'Заголовок пункта')
+                        ->set_width(33),
+                        Field::make('rich_text', 'crb_bath_list_desc', 'Описание пункта')
+                        ->set_width(33),
+                )),
+            Field::make('rich_text', 'crb_bath_summary', 'Текст Итог')
+                ->set_width(33),
+            Field::make('complex', 'crb_bath_gallery', 'Фото блока про Баню')
+            ->set_classes('gallery-items')    
+            ->add_fields(array(
+                    Field::make('image', 'crb_bath_gal_img', 'Фото')
+                        ->set_width(33),
+                ))
+
+        ))
+
+        ->add_tab(__('FAQ'), array(
+            Field::make('text', 'crb_faq_head', 'Заголовок блока')
+                ->set_width(33),
+            Field::make('rich_text', 'crb_faq_desc', 'Краткий подзаголовок блока')
+                ->set_width(33),
+
+            Field::make('complex', 'crb_faq_items', 'Вопрос-ответ')
+                ->add_fields(array(
+                    Field::make('text', 'crb_faq_question', 'Вопрос')
+                        ->set_width(50),
+                    Field::make('rich_text', 'crb_faq_answer', 'Ответ')
+                        ->set_width(50)
+                ))
+        ))
+
         ->add_tab(__('Видео'), array(
             Field::make('media_gallery', 'crb_hero_video', 'Видео')
                 ->set_type('video')
@@ -253,6 +296,13 @@ function site_carbon()
                 ))
         ))
 
+        ->add_tab(__('Блок с картой'), array(
+            Field::make('text', 'crb_map_head', 'Заголовок блока')
+                ->set_width(50),
+            Field::make('rich_text', 'crb_map_desc', 'Краткий подзаголовок блока')
+                ->set_width(50),
+        ))
+
         ->add_tab(__('Форма обратной связи'), array(
             Field::make('text', 'crb_cf_form_heading', 'Заголовок формы'),
             Field::make('text', 'crb_cf_form_description', 'Подзаголовок формы'),
@@ -262,6 +312,20 @@ function site_carbon()
                 ->help_text('вставьте шорткод для формы обратной связи в это поле')
                 ->set_width(33),
         ));
+
+        Container::make('post_meta', 'Фото для галереи')
+        ->show_on_post_type('photos')
+        ->set_classes('gallery-items')
+        ->add_fields(array(
+        Field::make('complex', 'crb_gallery_images', 'Фотографии для раздела')
+                ->add_fields(array(
+                    Field::make('image', 'crb_gallery_image', 'Фото')
+                        ->set_width(50),
+                    Field::make('text', 'crb_gallery_image_desc', 'Описание к фото')
+                        ->set_width(50),
+                ))
+                ));
+        
 
     //Field::make('time', 'time', 'Time')
 

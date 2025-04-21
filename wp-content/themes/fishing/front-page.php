@@ -4,6 +4,7 @@
 <?php get_template_part('template-parts/welcome-block') ?>
 <?php get_template_part('template-parts/way-block') ?>
 <?php get_template_part('template-parts/about-us') ?>
+<?php get_template_part('template-parts/bath') ?>
 <?php get_template_part('template-parts/video') ?>
 <?php 
     if ($photo_bg = carbon_get_post_meta(get_the_ID(), 'crb_image_background')){
@@ -23,6 +24,8 @@
 
 <?php get_template_part('template-parts/map') ?>
 
+<?php get_template_part('template-parts/photogallery/gallery') ?>
 
+<?php get_template_part('template-parts/faq') ?>
 
 <?php get_footer() ?>

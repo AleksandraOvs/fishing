@@ -75,7 +75,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
     let options = { threshold: [0.5] };
     let observer = new IntersectionObserver(onEntry, options);
-    let elements = document.querySelectorAll('.fromBottom, .fromTop, .fromRight, .fromOpacity, .animateScale');
+    let elements = document.querySelectorAll('.fromBottom, .fromTop, .fromRight, .fromOpacity, .fromLeft, .animateScale');
     for (let elm of elements) {
         observer.observe(elm);
     }

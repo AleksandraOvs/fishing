@@ -42,7 +42,7 @@
 
                 $this_ext = end(explode(".", $video_url));
 
-                echo '<source src="' . wp_get_attachment_url($video) . '"' . 'type="video/' . $this_ext . ' " ' . '>';
+                echo '<source src="' . wp_get_attachment_url($video) . '"' . ' type="video/' . $this_ext . ' " ' . '>';
             }
             ?>
         </video>
