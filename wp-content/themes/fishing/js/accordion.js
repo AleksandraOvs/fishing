@@ -1,6 +1,6 @@
 window.addEventListener('DOMContentLoaded', function() {
     jQuery(document).ready(function($){
-      $('#faq .faq-item').accordion({
+      $('#faq').accordion({
           active: 0,
           animate: {
               duration: 300,
