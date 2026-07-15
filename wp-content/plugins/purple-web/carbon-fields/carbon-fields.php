@@ -51,6 +51,20 @@ function site_carbon()
                 ->set_width(50),
             Field::make('image', 'crb_mes_phone_link_img', 'Иконка телефона')
                 ->set_width(50),
+                
+                Field::make('text', 'crb_mes_phone2', 'Телефон')
+                ->set_width(50),
+            Field::make('text', 'crb_mes_phone_link2', 'Ссылка телефона')
+                ->set_width(50),
+            Field::make('image', 'crb_mes_phone_link_img2', 'Иконка телефона')
+                ->set_width(50),
+                
+                Field::make('text', 'crb_mes_phone3', 'Телефон')
+                ->set_width(50),
+            Field::make('text', 'crb_mes_phone_link3', 'Ссылка телефона')
+                ->set_width(50),
+            Field::make('image', 'crb_mes_phone_link_img3', 'Иконка телефона')
+                ->set_width(50),
 
             Field::make('complex', 'messengers', 'Ссылки на контакты')
                 ->add_fields(array(

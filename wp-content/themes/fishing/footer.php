@@ -61,6 +61,20 @@
 						}
 					}
 					?>
+					
+					<?php if ($phone2 = carbon_get_theme_option('crb_mes_phone2')) {
+						if ($phone_link2 = carbon_get_theme_option('crb_mes_phone_link2')) {
+							echo '<a href="' . $phone_link2 . '">' . $phone2  . '</a>';
+						}
+					}
+					?>
+					
+					<?php if ($phone3 = carbon_get_theme_option('crb_mes_phone3')) {
+						if ($phone_link3 = carbon_get_theme_option('crb_mes_phone_link3')) {
+							echo '<a href="' . $phone_link3 . '">' . $phone3  . '</a>';
+						}
+					}
+					?>
 
 					<?php
 					if ($messengers = carbon_get_theme_option('messengers')) {
@@ -120,12 +134,12 @@
 
 			<div class="site-footer__inner__right">
 				<?php
-				wp_nav_menu(
-					array(
-						'theme_location' => 'menu-footer',
-						'menu_id'        => 'footer-menu',
-					)
-				);
+// 				wp_nav_menu(
+// 					array(
+// 						'theme_location' => 'menu-footer',
+// 						'menu_id'        => 'footer-menu',
+// 					)
+// 				);
 				?>
 
 				<?php
