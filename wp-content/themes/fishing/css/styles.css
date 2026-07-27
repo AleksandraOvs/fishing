@@ -460,12 +460,12 @@ section.section {
     width: 70% !important;
 }
 
-.hero-content__inner .hero-title {
+.hero-content__inner h2 {
     margin-bottom: 0;
     font-size: calc(1em + 3vw);
 }
 
-.hero-content__inner__left .hero-title::first-line {
+.hero-content__inner__left h2::first-line {
     font-size: calc(1em + 5vw);
     font-weight: 400;
     color: var(--accent);
@@ -583,16 +583,15 @@ section.section {
 }
 
 .way-list {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: stretch;
+    display: block;
+    /*     grid-template-columns: 1fr 1fr;
+    align-items: stretch; */
 }
 
 .way-list__item {
     display: flex;
     gap: 20px;
-    flex-direction: column;
-    align-items: flex-start;
+    align-items: stretch;
 }
 
 /* .way-list__item {
@@ -602,6 +601,12 @@ section.section {
     padding: 30px;
     background: rgb(58, 58, 58);
 } */
+
+.way-list__item .num-inner {
+    width: 60px;
+    display: flex;
+    flex-direction: column;
+}
 
 .way-list__item img {
     position: absolute;
@@ -757,9 +762,9 @@ section.section {
 .num-inner::after {
     content: '';
     display: block;
-    height: 2px;
-    width: calc(100% - 60px);
+    height: calc(100% - 60px);
     background: var(--accent);
+    width: 2px;
 }
 
 .num-inner {
@@ -2046,6 +2051,7 @@ section.form-section {
     margin: 0;
     margin-bottom: 0px;
     margin-bottom: 20px;
+    line-height: 100%;
     text-transform: uppercase;
     letter-spacing: 1.5px;
     color: var(--primary);
@@ -2934,10 +2940,10 @@ section._faq-section {
         padding: 12vh 0;
     }
 
-    .section._additional-section {
+    /*     .section._additional-section {
         padding-top: 0;
         padding-bottom: 0;
-    }
+    } */
 
     .hero-content__inner__right {
         width: 100%;
@@ -2995,7 +3001,7 @@ section._faq-section {
         text-align: center;
     }
 
-    .hero-content__inner__left .hero-title {
+    .hero-content__inner__left h2 {
         text-align: center;
     }
 
@@ -3512,6 +3518,11 @@ section._faq-section {
         font-size: 28px;
     }
 
+    .hivus-block {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
 }
 
 @media (max-width: 480px) {
@@ -3571,6 +3582,36 @@ section._faq-section {
 
     .fancybox-slide .gallery-modal {
         max-height: 400px;
+    }
+
+    .watch-video::after {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 300px;
+        height: 100px;
+        transform: translateX(-10px);
+    }
+
+    .watch-video__button {
+        width: 40px;
+        height: 40px;
+    }
+
+    .watch-video {
+        gap: 7px;
+    }
+
+    .watch-video p {
+        font-size: 20px;
+    }
+
+    .watch-video__button svg {
+        padding: 0;
+    }
+
+    .hivus-list__item {
+        width: 100%;
     }
 
 }
