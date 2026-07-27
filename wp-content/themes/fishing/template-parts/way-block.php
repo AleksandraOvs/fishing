@@ -65,7 +65,7 @@
                 <div class="hivus-block__left">
                     <div class="section-title white-text">
                         <p class="section-title__description fromOpacity">Судно навоздушной подушке</p>
-                        <h2 class="fromTop">Трансфер на хивусах</h2>
+                        <div class="fromTop">Трансфер на хивусах</div>
                     </div>
 
                     <div class="text-block">— это более комфортный и продуманный вариант логистики по сравнению с обычными лодками</div>

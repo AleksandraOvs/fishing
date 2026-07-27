@@ -12,7 +12,7 @@ if ($about_items = carbon_get_post_meta(get_the_ID(), 'crb_about_list')) {
                         echo '<p class="section-title__description fromOpacity">' . $head_desc . '</p>';
                     }
                     ?>
-                    <h2 class="fromTop"><?php echo $about_head ?></h2>
+                    <div class="fromTop color-primary"><?php echo $about_head ?></div>
 
                 </div>
             <?php

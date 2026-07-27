@@ -13,7 +13,7 @@ if ($bath_items = carbon_get_post_meta(get_the_ID(), 'crb_bath_list')) {
                             echo '<p class="section-title__description color-primary" style="border-color: var(--primary); ">' . $bath_desc . '</p>';
                         }
                         ?>
-                        <h2 class="fromTop color-primary"><?php echo $bath_head ?></h2>
+                        <div class="fromTop color-primary"><?php echo $bath_head ?></div>
 
                     </div>
 
@@ -50,23 +50,23 @@ if ($bath_items = carbon_get_post_meta(get_the_ID(), 'crb_bath_list')) {
                 </ul>
 
                 <div class="bath-photos">
-                    <?php 
-                        if ($bath_gallery = carbon_get_post_meta(get_the_ID(), 'crb_bath_gallery')){
-                            foreach ($bath_gallery as $bath_photo){
-                                $bath_photo = $bath_photo['crb_bath_gal_img'];
-                                $bath_photo_url_full = wp_get_attachment_image_url($bath_photo, 'full');
-                                ?>
-                                <a data-fancybox="gallery" href="<?php echo $bath_photo_url_full ?>">
+                    <?php
+                    if ($bath_gallery = carbon_get_post_meta(get_the_ID(), 'crb_bath_gallery')) {
+                        foreach ($bath_gallery as $bath_photo) {
+                            $bath_photo = $bath_photo['crb_bath_gal_img'];
+                            $bath_photo_url_full = wp_get_attachment_image_url($bath_photo, 'full');
+                    ?>
+                            <a data-fancybox="gallery" href="<?php echo $bath_photo_url_full ?>">
 
                                 <img src="<?php echo  $bath_photo_url_full ?>" alt="Баня на барже">
-                                </a>
-                                <?php
-                            }
+                            </a>
+                    <?php
                         }
+                    }
                     ?>
                 </div>
 
-                
+
 
             </div>
 

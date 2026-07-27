@@ -12,7 +12,7 @@ if ($map_code = carbon_get_theme_option('crb_map_code')) {
                         echo '<p class="section-title__description fromOpacity">' . $map_desc . '</p>';
                     }
                     ?>
-                    <h2 class="fromTop"><?php echo $map_head ?></h2>
+                    <div class="fromTop"><?php echo $map_head ?></div>
                 </div>
             <?php
             }

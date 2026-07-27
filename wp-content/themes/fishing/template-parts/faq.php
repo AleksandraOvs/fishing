@@ -12,7 +12,7 @@
                         echo '<p class="section-title__description fromOpacity">' . $head_desc . '</p>';
                     }
                     ?>
-                    <h2 class="fromTop"><?php echo $why_head ?></h2>
+                    <div class="fromTop"><?php echo $why_head ?></div>
 
                 </div>
             <?php

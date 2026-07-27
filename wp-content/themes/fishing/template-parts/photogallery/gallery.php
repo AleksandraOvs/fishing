@@ -3,7 +3,7 @@
         <div class="section-title ">
             <p class="section-title__description fromOpacity">Фото прошлых туров</p>
 
-            <h2 class="fromTop">Фотогалерея</h2>
+            <div class="fromTop color-primary">Фотогалерея</div>
         </div>
     </div>
     <div class="fluid-container">
