@@ -381,13 +381,14 @@ section.section {
 }
 
 .hero-content__inner__left {
-    width: 60%;
+    width: 100%;
 }
 
 .hero-content__inner__right {
-    width: calc(40% - 40px);
+    width: 100%;
     display: flex;
-    align-items: flex-end;
+    justify-content: flex-end;
+    margin-top: 60px;
 }
 
 .hero-content__inner p {
