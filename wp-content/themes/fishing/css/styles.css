@@ -2757,11 +2757,11 @@ section._faq-section {
 
 .faq-question-head h3 {
     width: calc(100% - 40px);
-    font-size: 28px;
+    font-size: 24px;
 }
 
 .faq-question-head {
-    padding: 30px 30px 30px 30px;
+    padding: 20px;
 }
 
 .faq-item .faq-answer {
