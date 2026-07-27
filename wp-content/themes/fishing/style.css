@@ -456,15 +456,15 @@ h6 {
 }
 
 h2 {
-	margin: 0;
 	font-family: 'Accid', sans-serif;
-	font-size: calc(1em + 4vw);
+	font-size: 30px;
 	line-height: 120%;
 	font-weight: 400;
 	text-transform: uppercase;
-	margin-bottom: 5vh;
+	margin-bottom: 0;
 	color: #fff;
 	text-transform: uppercase;
+	color: var(--primary);
 }
 
 .hero-title {
