@@ -108,7 +108,7 @@ section.section {
     color: var(--white);
 }
 
-.section-title h2 {
+.section-title {
     margin-bottom: 0;
     line-height: 100%;
     width: fit-content;
