@@ -460,7 +460,8 @@ section.section {
     width: 70% !important;
 }
 
-.hero-content__inner h2 {
+.hero-content__inner h2,
+.hero-title {
     margin-bottom: 0;
     font-size: calc(1em + 3vw);
 }
@@ -2883,7 +2884,8 @@ section._faq-section {
         width: 80%;
     }
 
-    .hero-content__inner h2 {
+    .hero-content__inner h2,
+    .hero-title {
         margin-bottom: 0;
         font-size: calc(1em + 5vw);
     }
@@ -3001,7 +3003,8 @@ section._faq-section {
         text-align: center;
     }
 
-    .hero-content__inner__left h2 {
+    .hero-content__inner__left h2,
+    .hero-title {
         text-align: center;
     }
 
@@ -3257,7 +3260,8 @@ section._faq-section {
         align-items: center;
     }
 
-    .hero-content__inner h2 {
+    .hero-content__inner h2,
+    .hero-title {
         text-align: center;
     }
 
