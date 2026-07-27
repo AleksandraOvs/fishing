@@ -110,7 +110,14 @@ section.section {
 
 .section-title {
     margin-bottom: 0;
+    font-family: 'Accid', sans-serif;
+    font-size: calc(1em + 4vw);
     line-height: 100%;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 5vh;
+    color: #fff;
+    text-transform: uppercase;
     width: fit-content;
     display: flex;
     flex-direction: column;
