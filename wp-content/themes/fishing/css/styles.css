@@ -466,7 +466,8 @@ section.section {
     font-size: calc(1em + 3vw);
 }
 
-.hero-content__inner__left h2::first-line {
+.hero-content__inner__left h2::first-line,
+.hero-title::first-line {
     font-size: calc(1em + 5vw);
     font-weight: 400;
     color: var(--accent);
