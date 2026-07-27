@@ -456,7 +456,7 @@ h6 {
 }
 
 h2 {
-	margin:  0;
+	margin: 0;
 	font-family: 'Accid', sans-serif;
 	font-size: calc(1em + 4vw);
 	line-height: 120%;
@@ -465,7 +465,19 @@ h2 {
 	margin-bottom: 5vh;
 	color: #fff;
 	text-transform: uppercase;
-  }
+}
+
+.hero-title {
+	margin: 0;
+	font-family: 'Accid', sans-serif;
+	font-size: calc(1em + 4vw);
+	line-height: 120%;
+	font-weight: 400;
+	text-transform: uppercase;
+	margin-bottom: 5vh;
+	color: #fff;
+	text-transform: uppercase;
+}
 
 h3 {
 	font-size: calc(1em + 1.4vw);
@@ -868,11 +880,11 @@ textarea {
 
 .main-navigation a {
 	display: block;
-  text-decoration: none;
-  font-weight: 400;
-  text-transform: uppercase;
-  padding: 0 20px;
-  color: #fff;
+	text-decoration: none;
+	font-weight: 400;
+	text-transform: uppercase;
+	padding: 0 20px;
+	color: #fff;
 }
 
 
@@ -1402,22 +1414,23 @@ a.menu-toggle {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-  }
+}
 
-  .error-404.not-found .fixed-container .page-header .error-pic{
-	width:400px;
+.error-404.not-found .fixed-container .page-header .error-pic {
+	width: 400px;
 	height: 250px;
 	background: url(images/svg/error.svg) no-repeat;
 	background-size: contain;
-  }
+}
 
-  .error-404 .fixed-container .page-content {
+.error-404 .fixed-container .page-content {
 	position: relative;
 	display: flex;
 	margin-top: 0;
 	flex-direction: column;
 	align-items: center;
-  }
-  .error-404 #page{
+}
+
+.error-404 #page {
 	position: relative;
-  }
+}

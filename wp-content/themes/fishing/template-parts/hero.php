@@ -33,19 +33,19 @@
         <!-- <video class="promo__video" pip="false" video autoplay loop muted playsinline webkit-playinginline poster="<?php //echo get_stylesheet_directory_uri() . '/images/video/poseter.jpg'
                                                                                                                         ?>"> -->
         <div class="video-inner">
-        <video class="first__video" pip="false" autoplay muted playsinline webkit-playinginline >
+            <video class="first__video" pip="false" autoplay muted playsinline webkit-playinginline>
 
-            <?php
-            foreach ($hero_video  as $v => $video) {
+                <?php
+                foreach ($hero_video  as $v => $video) {
 
-                $video_url =  wp_get_attachment_url($video);
+                    $video_url =  wp_get_attachment_url($video);
 
-                $this_ext = end(explode(".", $video_url));
+                    $this_ext = end(explode(".", $video_url));
 
-                echo '<source src="' . wp_get_attachment_url($video) . '"' . ' type="video/' . $this_ext . ' " ' . '>';
-            }
-            ?>
-        </video>
+                    echo '<source src="' . wp_get_attachment_url($video) . '"' . ' type="video/' . $this_ext . ' " ' . '>';
+                }
+                ?>
+            </video>
         </div>
     <?php
     }
@@ -58,7 +58,7 @@
                 <div class="hero-content__inner__left">
                     <?php
                     if ($hero_heading = carbon_get_post_meta(get_the_ID(), 'crb_hero_heading')) {
-                        echo '<h2 class="fromTop">' . $hero_heading . '</h2>';
+                        echo '<div class="hero-title fromTop">' . $hero_heading . '</h2>';
                     }
                     ?>
 
