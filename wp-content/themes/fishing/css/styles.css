@@ -2079,6 +2079,7 @@ section.form-section {
     height: 260px;
     border-radius: 10px;
     overflow: hidden;
+    flex-grow: 1;
 }
 
 .bath-photos a img {

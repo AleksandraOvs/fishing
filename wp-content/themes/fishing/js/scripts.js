@@ -1,17 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-    // (function () {
-    //     $('.burger').on('click', function() {
-    //     $('.burger').toggleClass('animate');
-    //         $('.nav').toggleClass('animate');
-    //         $('.background-container').toggleClass('animate');
-    //     })
-    //     })();
-
-
-    // Изменение хедера при скролле
-
-
     const headerFront = document.querySelector('.site-header');
     const headerLogo = document.querySelector('.header__inner__logo');
     const headerChange = () => {
@@ -214,13 +202,38 @@ document.addEventListener("DOMContentLoaded", () => {
         //completed: function(){ alert("Вы ввели номер: " + this.val()); }
     });
 
+    jQuery(function ($) {
 
+        // Скрываем все ответы
+        $('.faq-answer').hide();
 
-// $('.trainer-gallery').masonry({
-//     columnWidth: 100,
-//     itemSelector: '.trainer-gallery',
-//     percentPosition: true
-//   });
+        $('.faq-question-head').on('click', function () {
+
+            const $item = $(this).closest('.faq-item');
+            const $answer = $item.find('.faq-answer');
+
+            // Если уже открыт — закрываем
+            if ($item.hasClass('active')) {
+                $item.removeClass('active');
+                $answer.stop(true, true).slideUp(300);
+                return;
+            }
+
+            // Закрываем остальные
+            $('.faq-item.active')
+                .removeClass('active')
+                .find('.faq-answer')
+                .stop(true, true)
+                .slideUp(300);
+
+            // Открываем текущий
+            $item.addClass('active');
+            $answer.stop(true, true).slideDown(300);
+
+        });
+
+    });
+
 
 
 });
