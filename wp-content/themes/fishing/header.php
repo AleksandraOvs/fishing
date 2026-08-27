@@ -19,6 +19,12 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 
+	<!-- Favicon -->
+	<link rel="icon" href="<?php echo get_stylesheet_directory_uri() . '/images/favi/favicon.ico' ?>" sizes="any" />
+
+	<link rel="icon" href="<?php echo get_stylesheet_directory_uri() . '/images/favi/favicon.svg' ?>" type="image/svg+xml" />
+	<link rel="apple-touch-icon" href="<?php echo get_stylesheet_directory_uri() . '/images/favi/favicon.svg' ?>" />
+
 	<?php wp_head(); ?>
 </head>
 
@@ -70,12 +76,12 @@
 				<nav id="site-navigation" class="main-navigation">
 
 					<?php
-// 					wp_nav_menu(
-// 						array(
-// 							'theme_location' => 'menu-1',
-// 							'menu_id'        => 'primary-menu',
-// 						)
-// 					);
+					// 					wp_nav_menu(
+					// 						array(
+					// 							'theme_location' => 'menu-1',
+					// 							'menu_id'        => 'primary-menu',
+					// 						)
+					// 					);
 					?>
 
 				</nav><!-- #site-navigation -->
@@ -89,7 +95,11 @@
 					<?php
 					if ($yc_button = carbon_get_theme_option('crb_reg_button_link')) {
 					?>
-						<a target="_blank" href="<?php echo $yc_button ?>" class="btn"><?php if ($yc_button_text = carbon_get_theme_option('crb_reg_button_text')){ echo $yc_button_text; }else{echo 'Записаться';}?></a>
+						<a target="_blank" href="<?php echo $yc_button ?>" class="btn"><?php if ($yc_button_text = carbon_get_theme_option('crb_reg_button_text')) {
+																							echo $yc_button_text;
+																						} else {
+																							echo 'Записаться';
+																						} ?></a>
 					<?php
 					}
 					?>
