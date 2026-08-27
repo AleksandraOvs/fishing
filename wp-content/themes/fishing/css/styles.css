@@ -894,15 +894,6 @@ section.section {
     object-position: center;
 }
 
-.about-section__inner {
-    display: grid;
-    grid-template-columns: 60% calc(40% - 20px);
-    gap: 20px;
-    align-items: flex-end;
-    z-index: 4;
-    position: relative;
-}
-
 .promo__video-wrap {
     display: flex;
     align-items: center;
