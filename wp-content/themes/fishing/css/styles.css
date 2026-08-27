@@ -869,7 +869,6 @@ section.section {
     background-size: cover;
     background-position: center;
     filter: saturate(.4);
-    height: calc(100% - 140px);
 }
 
 .about-list__item {
