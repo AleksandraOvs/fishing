@@ -31,12 +31,13 @@ if ($about_items = carbon_get_post_meta(get_the_ID(), 'crb_about_list')) {
                             <p><?php echo $about_item['crb_about_text'] ?></p>
                         </li>
 
-                        <li class="about-section__inner__right">
 
-                        </li>
                     <?php
                     }
                     ?>
+                    <li class="about-section__inner__right">
+
+                    </li>
                 </ul>
 
 
