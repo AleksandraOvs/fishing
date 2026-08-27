@@ -2238,14 +2238,6 @@ footer .site-info {
     border-radius: 100%;
 }
 
-.about-list li:last-child p {
-    font-family: 'Accid', sans-serif;
-    color: var(--primary);
-    font-size: 28px;
-    margin:
-        0;
-}
-
 .messengers-list__item img {
     width: 20px;
     height: 20px;
